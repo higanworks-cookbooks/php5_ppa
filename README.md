@@ -18,7 +18,13 @@ add recipe to run_list
 
 ## from_skettler
 
-add [https://launchpad.net/~skettler/+ppa-packages](https://launchpad.net/~skettler/+ppa-packages) and execute `apt-get update` 
+add [https://launchpad.net/~skettler/+ppa-packages](https://launchpad.net/~skettler/+ppa-packages)   and execute `apt-get update` 
+
+## from_ondrej
+
+add [https://launchpad.net/~ondrej/+archive/php5](https://launchpad.net/~ondrej/+archive/php5)  
+and execute `apt-get update` 
+
 
 Contributing
 ====
