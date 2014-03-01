@@ -28,7 +28,7 @@ apt_repository "skettler-php-#{node["lsb"]["codename"]}" do
   distribution node["lsb"]["codename"]
   components ["main"]
   keyserver node["php5_ppa"]["keyserver"]
-  key "C18789EA"
+  key node["php5_ppa"]["key_skettler"]
   action :add
   notifies :run, "execute[apt-get update]", :immediately
 end

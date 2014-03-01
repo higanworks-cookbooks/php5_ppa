@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-12.04
+
+suites:
+  - name: ondrej
+    run_list:
+      - recipe[php5_ppa::from_ondrej]
+    attributes:
+  - name: skettler
+    run_list:
+      - recipe[php5_ppa::from_skettler]
+    attributes:

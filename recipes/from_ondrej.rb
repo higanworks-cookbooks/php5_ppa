@@ -28,7 +28,7 @@ apt_repository "ondrej-php-#{node["lsb"]["codename"]}" do
   distribution node["lsb"]["codename"]
   components ["main"]
   keyserver node["php5_ppa"]["keyserver"]
-  key "E5267A6C"
+  key node["php5_ppa"]["key_ondrej"]
   action :add
   notifies :run, "execute[apt-get update]", :immediately
 end
